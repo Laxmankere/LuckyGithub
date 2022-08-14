@@ -1,0 +1,385 @@
+<html>
+<head>
+<title>TestNG:  allcombineclass</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>allcombineclass</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>22/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Aug 04 00:31:36 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1269 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestNGKeywords.TimeOutUse.b()'><b>b</b><br>Test class: TestNGKeywords.TimeOutUse</td>
+<td><div><pre>org.testng.internal.thread.ThreadTimeoutException: Method TestNGKeywords.TimeOutUse.b() didn&apos;t finish within the time-out 1000
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2075952726", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2075952726'><pre>org.testng.internal.thread.ThreadTimeoutException: Method TestNGKeywords.TimeOutUse.b() didn&apos;t finish within the time-out 1000
+	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNewExecutor(MethodInvocationHelper.java:384)
+	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:283)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:604)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>TestNGKeywords.TimeOutUse@27f981c6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestNGKeywords.PriorityStudy.d()'><b>d</b><br>Test class: TestNGKeywords.PriorityStudy<br/>
+<a href="#Output-884860061" onClick='toggleBox("Output-884860061", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-884860061" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-884860061">
+d method is running<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGKeywords.PriorityStudy@17497425</td></tr>
+<tr>
+<td title='TestNGKeywords.InvocationCountStudy.Mymethod()'><b>Mymethod</b><br>Test class: TestNGKeywords.InvocationCountStudy<br/>
+<a href="#Output-220454978" onClick='toggleBox("Output-220454978", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-220454978" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-220454978">
+My Method is running<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGKeywords.InvocationCountStudy@1b11171f</td></tr>
+<tr>
+<td title='TestNGKeywords.DependsOnstudy.c()'><b>c</b><br>Test class: TestNGKeywords.DependsOnstudy<br/>
+<a href="#Output-1367937032" onClick='toggleBox("Output-1367937032", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1367937032" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1367937032">
+c method is running<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGKeywords.DependsOnstudy@4659191b</td></tr>
+<tr>
+<td title='TestNGKeywords.InvocationCountStudy.Apple()'><b>Apple</b><br>Test class: TestNGKeywords.InvocationCountStudy<br/>
+<a href="#Output-379303133" onClick='toggleBox("Output-379303133", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-379303133" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-379303133">
+My Method is running<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGKeywords.InvocationCountStudy@1b11171f</td></tr>
+<tr>
+<td title='TestNGKeywords.PriorityStudy.e()'><b>e</b><br>Test class: TestNGKeywords.PriorityStudy<br/>
+<a href="#Output-959629210" onClick='toggleBox("Output-959629210", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-959629210" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-959629210">
+e method is runnig<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGKeywords.PriorityStudy@17497425</td></tr>
+<tr>
+<td title='TestNGKeywords.TimeOutUse.a()'><b>a</b><br>Test class: TestNGKeywords.TimeOutUse<br/>
+<a href="#Output-548554586" onClick='toggleBox("Output-548554586", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-548554586" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-548554586">
+a method is running<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGKeywords.TimeOutUse@27f981c6</td></tr>
+<tr>
+<td title='TestNGKeywords.DependsOnstudy.d()'><b>d</b><br>Test class: TestNGKeywords.DependsOnstudy<br/>
+<a href="#Output-798310141" onClick='toggleBox("Output-798310141", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-798310141" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-798310141">
+d method is running<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGKeywords.DependsOnstudy@4659191b</td></tr>
+<tr>
+<td title='TestNGKeywords.PriorityStudy.b()'><b>b</b><br>Test class: TestNGKeywords.PriorityStudy<br/>
+<a href="#Output-603305436" onClick='toggleBox("Output-603305436", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-603305436" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-603305436">
+b method is running<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGKeywords.PriorityStudy@17497425</td></tr>
+<tr>
+<td title='TestNGKeywords.TimeOutUse.d()'><b>d</b><br>Test class: TestNGKeywords.TimeOutUse<br/>
+<a href="#Output-2101249621" onClick='toggleBox("Output-2101249621", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2101249621" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2101249621">
+d method is running<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGKeywords.TimeOutUse@27f981c6</td></tr>
+<tr>
+<td title='TestNGKeywords.InvocationCountStudy.Mymethod()'><b>Mymethod</b><br>Test class: TestNGKeywords.InvocationCountStudy<br/>
+<a href="#Output-530486389" onClick='toggleBox("Output-530486389", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-530486389" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-530486389">
+My Method is running<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGKeywords.InvocationCountStudy@1b11171f</td></tr>
+<tr>
+<td title='TestNGKeywords.DependsOnstudy.a()'><b>a</b><br>Test class: TestNGKeywords.DependsOnstudy<br/>
+<a href="#Output-575935098" onClick='toggleBox("Output-575935098", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-575935098" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-575935098">
+a method is running<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGKeywords.DependsOnstudy@4659191b</td></tr>
+<tr>
+<td title='TestNGKeywords.InvocationCountStudy.Mymethod()'><b>Mymethod</b><br>Test class: TestNGKeywords.InvocationCountStudy<br/>
+<a href="#Output-1188401255" onClick='toggleBox("Output-1188401255", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1188401255" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1188401255">
+My Method is running<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGKeywords.InvocationCountStudy@1b11171f</td></tr>
+<tr>
+<td title='TestNGKeywords.TimeOutUse.e()'><b>e</b><br>Test class: TestNGKeywords.TimeOutUse<br/>
+<a href="#Output-2113604623" onClick='toggleBox("Output-2113604623", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2113604623" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2113604623">
+e method is running<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGKeywords.TimeOutUse@27f981c6</td></tr>
+<tr>
+<td title='TestNGKeywords.DependsOnstudy.e()'><b>e</b><br>Test class: TestNGKeywords.DependsOnstudy<br/>
+<a href="#Output-258535644" onClick='toggleBox("Output-258535644", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-258535644" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-258535644">
+e method is running<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGKeywords.DependsOnstudy@4659191b</td></tr>
+<tr>
+<td title='TestNGKeywords.TimeOutUse.c()'><b>c</b><br>Test class: TestNGKeywords.TimeOutUse<br/>
+<a href="#Output-1764996806" onClick='toggleBox("Output-1764996806", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1764996806" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1764996806">
+c method is running<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGKeywords.TimeOutUse@27f981c6</td></tr>
+<tr>
+<td title='TestNGKeywords.EnabaledStudy.a()'><b>a</b><br>Test class: TestNGKeywords.EnabaledStudy<br/>
+<a href="#Output-116669570" onClick='toggleBox("Output-116669570", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-116669570" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-116669570">
+a method running<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGKeywords.EnabaledStudy@4b8ee4de</td></tr>
+<tr>
+<td title='TestNGKeywords.PriorityStudy.c()'><b>c</b><br>Test class: TestNGKeywords.PriorityStudy<br/>
+<a href="#Output-1293203138" onClick='toggleBox("Output-1293203138", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1293203138" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1293203138">
+c method is running <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGKeywords.PriorityStudy@17497425</td></tr>
+<tr>
+<td title='TestNGKeywords.InvocationCountStudy.Mymethod()'><b>Mymethod</b><br>Test class: TestNGKeywords.InvocationCountStudy<br/>
+<a href="#Output-755210740" onClick='toggleBox("Output-755210740", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-755210740" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-755210740">
+My Method is running<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGKeywords.InvocationCountStudy@1b11171f</td></tr>
+<tr>
+<td title='TestNGKeywords.EnabaledStudy.c()'><b>c</b><br>Test class: TestNGKeywords.EnabaledStudy<br/>
+<a href="#Output-1572256205" onClick='toggleBox("Output-1572256205", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1572256205" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1572256205">
+c method running<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGKeywords.EnabaledStudy@4b8ee4de</td></tr>
+<tr>
+<td title='TestNGKeywords.PriorityStudy.a()'><b>a</b><br>Test class: TestNGKeywords.PriorityStudy<br/>
+<a href="#Output-125994398" onClick='toggleBox("Output-125994398", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-125994398" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-125994398">
+a methos is running<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGKeywords.PriorityStudy@17497425</td></tr>
+<tr>
+<td title='TestNGKeywords.InvocationCountStudy.Mymethod()'><b>Mymethod</b><br>Test class: TestNGKeywords.InvocationCountStudy<br/>
+<a href="#Output-983595261" onClick='toggleBox("Output-983595261", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-983595261" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-983595261">
+My Method is running<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGKeywords.InvocationCountStudy@1b11171f</td></tr>
+<tr>
+<td title='TestNGKeywords.DependsOnstudy.b()'><b>b</b><br>Test class: TestNGKeywords.DependsOnstudy<br/>
+<a href="#Output-107915280" onClick='toggleBox("Output-107915280", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-107915280" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-107915280">
+b method is running<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>TestNGKeywords.DependsOnstudy@4659191b</td></tr>
+</table><p>
+</body>
+</html>
